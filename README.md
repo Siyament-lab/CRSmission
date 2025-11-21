@@ -14,4 +14,4 @@ Fr main (program.cs) anropas huvudmenyn och salesMenu klasser, kör igång program
 Det mest kod-tyngda klasserna är Products och SaleMenu.
 
 OBS: Vissa funktioner som tillhör VG-nivå är ej berarbetade, men dessa påverkar inte funktionalliteten
-uppgiften för G-krav.
+för G-krav nivån.

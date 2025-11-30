@@ -48,7 +48,7 @@ namespace CRSmission
         public void DisplayCart()
         {
             Console.WriteLine("\n--- Aktuell Försäljning/Kundvagn ---");
-            Console.WriteLine($"{"ID",-4} | {"Namn",-20} | {"Antal/Enhet",-20} | {"Pris totalt"}");
+            Console.WriteLine($"{"ID",-7} | {"Namn",-24} | {"Antal/Enhet",-20} | {"Pris totalt"}");
             Console.WriteLine("-------------------------------------------------------------------");
 
             if (!Items.Any())
@@ -62,9 +62,10 @@ namespace CRSmission
                     Console.WriteLine(item.ToString());
                 }
             }
-            Console.WriteLine("-------------------------------------------------------------------");
-            Console.WriteLine($"** Totalsumma: {GetCartTotal():C2} **");
-            Console.WriteLine("-------------------------------------------------------------------");
+            //Finns inget behov
+            //Console.WriteLine("-------------------------------------------------------------------");
+            //Console.WriteLine($"** Totalsumma: {GetCartTotal():C2} **");
+            //Console.WriteLine("-------------------------------------------------------------------");
         }
 
         // Under konstruktion för borttagning av produkter, returer, lägga till kampanjer etc.

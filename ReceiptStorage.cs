@@ -44,7 +44,7 @@ namespace CRSmission
             //Istället för string.
             StringBuilder receiptText = new StringBuilder();
             receiptText.AppendLine("====================MishMash=======================");
-            receiptText.AppendLine("                  Kvitto             ");
+            receiptText.AppendLine("                     Kvitto             ");
             receiptText.AppendLine("===================================================");
             receiptText.AppendLine($"Datum: {DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}");
             receiptText.AppendLine("___________________________________________________");
@@ -71,7 +71,7 @@ namespace CRSmission
             }
             catch (Exception ex)
             {
-                // fånga ev. fel och meddela. Undviken program- krasch.
+                // fånga ev. fel och meddela. Undviker program- krasch.
                 Console.WriteLine($"Något stämmer inte här, Fel: {ex.Message}");
                 return string.Empty;
             }

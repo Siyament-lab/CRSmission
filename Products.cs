@@ -43,7 +43,7 @@ namespace CRSmission
 
         public override string ToString()
         {
-            return $"ID: {ProductId, -4}| Namn: {Name, -20}| Pris: {ItemPrice:C2}| Enhet :{Unit.GetDescription()}";
+            return $"ID: {ProductId, -4}| Namn: {Name, -24}| Pris: {ItemPrice:C2}| Enhet :{Unit.GetDescription()}";
         }
 
         // Metod för att skapa och fylla med förvalda produkter
@@ -112,8 +112,8 @@ namespace CRSmission
         public override string ToString()
         {
             
-            return $"ID: {Product.ProductId,-4}| Namn: {Product.Name,-20}| Antal: {Quantity:N2}" +
-                $" {Product.Unit.GetDescription(),-4}| Pris totalt: {TotalItemPrice:C2}";
+            return $"ID: {Product.ProductId,-4}| Namn: {Product.Name,-19}| Antal: {Quantity:N2}" +
+                $" {Product.Unit.GetDescription(),-9}| Pris totalt: {TotalItemPrice:C2}";
         }
     }
     // Klass för extension-metoder för enum

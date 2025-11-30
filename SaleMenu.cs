@@ -40,7 +40,8 @@ namespace CRSmission
 
                 Console.Write("Välj åtgärd: ");
 
-                if (int.TryParse(Console.ReadLine(), out int saleChoice) && saleChoice >= 0 && saleChoice < saleMenuOption.Length)
+                if (int.TryParse(Console.ReadLine(), out int saleChoice) 
+                    && saleChoice >= 0 && saleChoice < saleMenuOption.Length)
                 {
                     
                     switch (saleChoice)
